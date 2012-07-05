@@ -3,6 +3,11 @@
 final class Pattern_ValueObject_Positive 
 	extends Pattern_ValueObject_Abstract 
 {
+	public function Pattern_ValueObject_Positive($value)
+	{
+		parent::Pattern_ValueObject_Abstract($value);
+	}
+	
 	public function add($value)
 	{
 		$value = (int)$value + $this->_value;
@@ -12,6 +17,6 @@ final class Pattern_ValueObject_Positive
 	public function check($value)
 	{
 		$value = (int)$value;
-		return (0 <= $value) ? 0 : $value;
+		return ($value <= 0) ? 0 : $value;
 	}
 }
