@@ -7,6 +7,11 @@ final class Pattern_ValueObject_WearSize
 	
 	private $_defaultIndex = 0;
 	
+	public function Pattern_ValueObject_WearSize($value)
+	{
+		parent::Pattern_ValueObject_Abstract($value);
+	}
+	
 	public function check($value)
 	{
 		$value = strtolower((string)$value);
