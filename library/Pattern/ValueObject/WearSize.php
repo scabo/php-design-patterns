@@ -1,6 +1,6 @@
 <?php
 
-final class Pattern_VolumeObject_WearSize 
+final class Pattern_ValueObject_WearSize 
 	extends Pattern_VolumeObject_Abstract 
 {
 	private $_possibleValues = array('n/a', 'xs', 's', 'm', 'l', 'xl');

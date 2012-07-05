@@ -1,6 +1,6 @@
 <?php
 
-final class Pattern_VolumeObject_Positive 
+final class Pattern_ValueObject_Positive 
 	extends Pattern_VolumeObject_Abstract 
 {
 	public function add($value)

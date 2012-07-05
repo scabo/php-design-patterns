@@ -1,6 +1,6 @@
 <?php
 
-abstract class Pattern_VolumeObject_Abstract
+abstract class Pattern_ValueObject_Abstract
 {
 	protected $_value = null;
 	
