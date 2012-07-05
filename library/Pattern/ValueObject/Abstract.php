@@ -4,7 +4,7 @@ abstract class Pattern_ValueObject_Abstract
 {
 	protected $_value = null;
 	
-	public function Pattern_VolumeObject_Size($value)
+	public function Pattern_ValueObject_Abstract($value)
 	{
 		$this->_value = $this->check($value);
 	}
