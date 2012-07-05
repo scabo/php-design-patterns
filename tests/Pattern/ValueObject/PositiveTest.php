@@ -35,7 +35,7 @@ class Pattern_ValueObject_PositiveTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals($expect->getValue(), 15);
 	}
 	
-	public function testByValue()
+	public function testPassByValue()
 	{
 		$value = new Pattern_ValueObject_Positive(5);
 		
