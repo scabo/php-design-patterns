@@ -3,7 +3,7 @@
 final class Pattern_ValueObject_WearSize 
 	extends Pattern_ValueObject_Abstract 
 {
-	private $_possibleValues = array('n/a', 'xs', 's', 'm', 'l', 'xl');
+	private $_supportedValues = array('n/a', 'xs', 's', 'm', 'l', 'xl');
 	
 	private $_defaultIndex = 0;
 	
@@ -17,8 +17,8 @@ final class Pattern_ValueObject_WearSize
 		$value = strtolower((string)$value);
 		
 		return 
-			(in_array($value, $this->_possibleValues)) 
+			(in_array($value, $this->_supportedValues))
 			? $value 
-			: $this->_possibleValues[$this->_defaultIndex];
+			: $this->_supportedValues[$this->_defaultIndex];
 	}
 }

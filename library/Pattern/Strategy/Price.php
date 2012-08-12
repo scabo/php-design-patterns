@@ -9,11 +9,20 @@ class Pattern_Strategy_Price
      */
     private $_discount = null;
 
+    /**
+     * @param Pattern_Strategy_Discount_Interface $discount
+     *
+     * @return Pattern_Strategy_Price
+     */
     public function setDiscountContext(Pattern_Strategy_Discount_Interface $discount)
     {
         $this->_discount = $discount;
+        return $this;
     }
 
+    /**
+     * @return numeric
+     */
     public function getFinalPrice()
     {
         if (null === $this->_discount) return $this->_value;

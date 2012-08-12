@@ -13,6 +13,9 @@ class Pattern_Factory_Purchase
      */
     private $_factory = null;
 
+    /**
+     * @param Pattern_Factory_Factory_Interface $factory
+     */
     public function setProductFactory(Pattern_Factory_Factory_Interface $factory)
     {
         $this->_factory = $factory;
